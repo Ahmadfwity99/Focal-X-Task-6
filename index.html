@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-body-tertiary">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSaw | Focal X V.7 Task 6</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Header Start  -->
+    <header>
+        <!-- Nav Start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="Logo" />
+                </a>
+
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    Menu
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/images/logo.png" alt="Logo" />
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 px-5" aria-current="page" href="#home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-5" href="#featured">FEATURED</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 px-5" href="#popular">POPULAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav End -->
+        <!-- Hero Start -->
+        <section class="hero bg-body-tertiary mb-lg-0" id="home">
+            <div class="container-fluid mh-100 p-5 bg-body-tertiary mx-0 position-relative">
+                <div id="carouselExample" class="carousel slide bg-body-tertiary">
+                    <div class="carousel-inner bg-body-tertiary">
+                        <div class="carousel-item active bg-body-tertiary">
+                            <div
+                                class="container-fluid d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center">
+                                <div class="card border-0 col-12 col-lg-6 p-lg-3 bg-body-tertiary">
+                                    <h2 class=" p-md-2 col-10 col-md-6 fs-1">Life Of The Wild</h2>
+                                    <p class="fs-lg-6 text-secondary col-12 col-md-6">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing elit. Vero,
+                                        voluptatem ducimus
+                                        fuga neque ullam ea corporis non deleniti quisquam, saepe ipsum optio. Quam
+                                        officiis
+                                        ex molestias facere. Et, corrupti cum!</p>
+                                    <button class="btn btn-outline-warning p-2 fs-5">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                                <div class="container-fluid col-12 col-lg-6 p-5 p-lg-3 bg-body-tertiary">
+                                    <img src="./assets/images/main-banner1.jpg" class="" alt="main-banner1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-body-tertiary">
+                            <div
+                                class="container-fluid d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center">
+                                <div class="card border-0 col-12 col-lg-6 p-lg-3 bg-body-tertiary">
+                                    <h2 class=" p-md-2 col-10 col-md-6 fs-1">Birds Gonna Be Happy</h2>
+                                    <p class="fs-lg-6 text-secondary col-12 col-md-6">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing elit. Vero,
+                                        voluptatem ducimus
+                                        fuga neque ullam ea corporis non deleniti quisquam, saepe ipsum optio. Quam
+                                        officiis
+                                        ex molestias facere. Et, corrupti cum!</p>
+                                    <button class="btn btn-outline-warning p-2 fs-5">Read More <i
+                                            class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                                <div class="container-fluid col-12 col-lg-6 p-5 p-lg-3 bg-body-tertiary">
+                                    <img src="./assets/images/main-banner2.jpg" class="" alt="main-banner1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="left carousel-control-prev arrows" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <i class="text-dark fs-1 fa-solid fa-arrow-left" aria-hidden="true"></i>
+                </button>
+                <button class="right carousel-control-next arrows" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <i class="text-dark fs-1 fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+    </header>
+    <!-- Header End  -->
+    <!-- Main Start -->
+    <main>
+        <!-- popular Start -->
+        <section class="popular py-5 m-lg-0 bg-body-tertiary" id="featured">
+            <div
+                class="brand w-100 mx-0  flex-row p-5 align-items-center justify-content-center bg-body-secondary text-center">
+                <img src="./assets/images/client-image1.png" class="img-fluid py-2">
+                <img src="./assets/images/client-image2.png" class="img-fluid py-2">
+                <img src="./assets/images/client-image3.png" class="img-fluid py-2">
+                <img src="./assets/images/client-image4.png" class="img-fluid py-2">
+                <img src="./assets/images/client-image5.png" class="img-fluid py-2">
+            </div>
+
+            <div class="container-fluid section-header text-center py-5 px-2 h-auto">
+                <p class="title-paragraph fs-6 text-secondary">SOME QUALITY ITEMS</p>
+                <h2 class="section-title py-3 fs-1 position-relative">Featured Books</h2>
+            </div>
+            <div class="container-fluid d-flex flex-column">
+                <div class="books d-flex row flex-wrap justify-content-center border-bottom"></div>
+                <button class="btn tet-dark p-2 fs-5 align-self-end">View All Products <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <section class="best-selling-book bg-body-secondary h-auto">
+            <div class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center">
+                <div class="book-img p-5 mx-2">
+
+                </div>
+                <div class="book-heading ">
+                    <h2 class="p-md-2 col-10 col-md-6 fs-1 position-relative">Best Selling Book</h2>
+                    <div class="best d-flex-column justify-content-center align-items-center">
+
+                    </div>
+                </div>
+                <button class="btn tet-dark p-2 fs-5 align-self-end">Shop it now <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <!--  -->
+        <section class="popular py-5 m-lg-0 bg-body-tertiary" id="popular">
+            <div class="container-fluid section-header text-center py-5 px-2 h-auto">
+                <p class="title-paragraph fs-6 text-secondary">SOME QUALITY ITEMS</p>
+                <h2 class="section-title py-3 fs-1 position-relative">Popular Books</h2>
+                <ul class="genre container-fluid d-flex flex-wrap">
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2 active position-relative">All Genre</li>
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2">Business</li>
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2">Technology</li>
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2">Romantic</li>
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2">Adventure</li>
+                    <li class="fs-6 fw-bold col-5 col-md-2 text-dark p-2">Fictional</li>
+                </ul>
+            </div>
+            <div class="container-fluid d-flex flex-column">
+                <div class="books-1 d-flex row flex-wrap justify-content-center border-bottom"></div>
+                <button class="btn tet-dark p-2 fs-5 align-self-end">View All Products <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+        <section class="ad bg-body-secondary h-auto text-center w-100">
+            <div
+                class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center h-auto p-5">
+                <div class="book-heading p-5 col-10 col-md-5">
+                    <h2 class="p-md-2 col-10 col-md-6 fs-1 position-relative">Subscribe To Our Newsletter</h2>
+                </div>
+                <div class="ad-body col-10 col-md-5 p-5">
+                    <p class="py-2 fs-6 text-secondary w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus cupiditate, temporibus atque ex libero, voluptatem distinctio illum necessitatibus
+                        dicta voluptatum, aperiam dolor quis in rerum a repellat quas voluptates perferendis?</p>
+                    <div class="d-flex-column text-center">
+
+                        <input type="email" id="email"
+                            class=" w-50 pb-2 mb-4 text-dark border-0 border-bottom border-dark bg-body-secondary"
+                            placeholder="enter your email address here">
+                        </input>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
+    <!-- footer Start -->
+    <footer class="p-5 h-100vh w-100 text-center">
+        <div
+            class="container-fluid d-flex flex-lg-row flex-column justify-content-center align-items-center h-auto p-5 border-bottom">
+            <div class="d-flex-column col-10 col-md-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+                <p class="py-5 fs-6 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus cupiditate, temporibus atque ex libero, voluptatem distinctio illum necessitatibus
+                    dicta voluptatum, aperiam dolor quis in rerum a repellat quas voluptates perferendis?</p>
+            </div>
+            <div class="d-flex-column col-10 col-md-2">
+                <h4 class="footer-heading">
+                    About Us
+                </h4>
+                <ul class="footer-ul p-3">
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Vinson</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Articles</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Careers</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Service Terms</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Donate</a></li>
+                </ul>
+            </div>
+            <div class="d-flex-column col-10 col-md-2">
+                <h4 class="footer-heading">
+                    Discover
+                </h4>
+                <ul class="footer-ul p-3">
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#home">Home</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Books</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Authors</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Subjects</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Advanced Search</a></li>
+                </ul>
+            </div>
+            <div class="d-flex-column col-10 col-md-2">
+                <h4 class="footer-heading">
+                    My Account
+                </h4>
+                <ul class="footer-ul p-3">
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Sign In </a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">View Cart</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">My Wishlist</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Track My Order</a></li>
+                </ul>
+            </div>
+            <div class="d-flex-column col-10 col-md-2">
+                <h4 class="footer-heading">
+                    Help
+                </h4>
+                <ul class="footer-ul p-3">
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Help Center</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Report a Problem</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Suggesting edits</a></li>
+                    <li class="footer-li p-2"><a class="fs-6 text-dark footer-link" href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-evenly p-3">
+            <p class="py-5 fs-6 text-secondary">&copy;2024 All Right Reserved <span class="name-ahmad">Ahmad
+                    Fwity</span></p>
+            <div class="d-flex p-3">
+                <a class="footer-link d-flex justify-content-center align-items-center m-1 p-2" href="#"><i
+                        class="fa-brands fa-twitter fs-4"></i></a>
+                <a class="footer-link d-flex justify-content-center align-items-center m-1 p-2"
+                    href="https://www.facebook.com/ahmad.fwity"><i class="fa-brands fa-facebook fs-4"></i></a>
+                <a class="footer-link d-flex justify-content-center align-items-center m-1 p-2"
+                    href="https://www.instagram.com/ahmad.fwity/"><i class="fa-brands fa-instagram fs-4"></i></a>
+                <a class="footer-link d-flex justify-content-center align-items-center m-1 p-2"
+                    href="https://www.linkedin.com/in/ahmad-fwity/"><i class="fa-brands fa-linkedin fs-4"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

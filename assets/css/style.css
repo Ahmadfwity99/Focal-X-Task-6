@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-family: "Prata", serif;
+}
+
+/* Color Variables */
+:root {
+    --main-color: #dba85d;
+    --accent-color: #c5A992;
+}
+
+/* Anchor Styles */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styles */
+/* Navigation */
+nav {
+    max-height: 75px;
+}
+
+.nav-link:hover,
+nav .nav-item .active {
+    color: var(--main-color) !important;
+}
+
+/* Hero Section */
+.hero {
+    height: calc(100vh - 75px);
+}
+
+/* Button Styles */
+.btn-outline-warning {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    width: fit-content;
+}
+
+.btn-outline-warning:hover {
+    color: #fff !important;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.btn-outline-warning:focus,
+.btn-outline-warning:active {
+    box-shadow: 0 0 0 0.2rem var(--main-color) !important;
+}
+
+/* Arrow Positioning */
+.arrows {
+    height: fit-content;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+/* Section Title Styles */
+.section-title::before,
+.section-title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 20%;
+    background-color: rgba(148, 146, 139, 0.379);
+    top: 40px !important;
+}
+
+.section-title::before {
+    left: 50 !important;
+    transform: translate(-125%, 50%) !important;
+}
+
+.section-title::after {
+    right: 50 !important;
+    transform: translate(25%, 50%) !important;
+}
+
+.book-title {
+    color: var(--main-color);
+}
+
+/* Best Selling Section */
+.book-heading h2::after {
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+}
+
+/* Genre Active State */
+.genre .active::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0 !important;
+    transform: translateX(200%);
+}
+
+/* Footer Styles */
+.footer-link {
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--main-color) !important;
+}
+
+.name-ahmad {
+    color: var(--main-color);
+}
+
+/* Media Queries */
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 992px) {
+    .hero {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title::before {
+        display: none !important;
+    }
+
+    .section-title::after {
+        width: 100%;
+        top: 100px !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+}
